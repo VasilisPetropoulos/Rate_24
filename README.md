@@ -26,7 +26,7 @@ Most habit trackers just ask "Did you do it?". This tracker operates on a deeper
 ### Compilation
 Clone the repository and compile the source code:
 ```bash
-git clone [https://github.com/yourusername/productivity-tracker.git](https://github.com/yourusername/productivity-tracker.git)
+git clone [https://github.com/VasilisPetropoulos/Rate_24.git]
 cd productivity-tracker
 g++ -o tracker main.cpp Activity.cpp
 ```
