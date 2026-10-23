@@ -26,15 +26,15 @@ Most habit trackers just ask "Did you do it?". This tracker operates on a deeper
 ### Compilation
 Clone the repository and compile the source code:
 ```bash
-git clone [https://github.com/yourusername/productivity-tracker.git](https://github.com/yourusername/productivity-tracker.git)
-cd productivity-tracker
-g++ -o tracker main.cpp Activity.cpp
+git clone https://github.com/VasilisPetropoulos/Rate_24.git
+cd Rate_24
+g++ *.cpp -o Rate_24
 ```
 
 ### Usage
 Run the program manually:
 ```bash
-./tracker
+./Rate_24
 ```
 The program will guide you through your daily activities, evaluate your score out of 100, save the data locally, and offer to display your performance charts.
 
