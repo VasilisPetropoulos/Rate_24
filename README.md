@@ -29,5 +29,34 @@ Clone the repository and compile the source code:
 git clone [https://github.com/VasilisPetropoulos/Rate_24.git]
 cd productivity-tracker
 g++ -o tracker main.cpp Activity.cpp
+Usage
+
+Run the program manually:
+Bash
 
 ./tracker
+
+The program will guide you through your daily activities, evaluate your score out of 100, save the data locally, and offer to display your performance charts.
+⚙️ Setting up Automated Daily Prompts (Linux)
+
+Never forget to log your day. You can set the tracker to automatically open a terminal window every night.
+
+    Navigate to the linux_automation/ directory.
+
+    Edit tracker.sh and tracker.service to match your exact file paths and preferred terminal emulator (e.g., Alacritty, Kitty, GNOME Terminal).
+
+    Enable the systemd timer:
+
+Bash
+
+mkdir -p ~/.config/systemd/user/
+cp tracker.service tracker.timer ~/.config/systemd/user/
+systemctl --user daemon-reload
+systemctl --user enable --now tracker.timer
+
+🤝 Contributing
+
+Feel free to fork this project, open issues, or submit Pull Requests. Future plans include migrating the core logic to a Qt/QML Graphical User Interface.
+
+
+<FollowUp label="Θέλεις να προχωρήσουμε στο Qt;" query="Είμαι έτοιμος να ξεκινήσω το νέο project με τα γραφικά. Πώς στήνω το Qt και το QML στο Arch Linux;"/>
