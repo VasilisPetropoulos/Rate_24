@@ -26,9 +26,11 @@ Most habit trackers just ask "Did you do it?". This tracker operates on a deeper
 ### Compilation
 Clone the repository and compile the source code:
 ```bash
+
 git clone https://github.com/VasilisPetropoulos/Rate_24.git
 cd Rate_24
 g++ *.cpp -o Rate_24
+
 ```
 
 ### Usage
